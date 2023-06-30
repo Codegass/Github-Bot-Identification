@@ -1,2 +1,2 @@
 # Github-Bot-Identification
-Serve for Github Bot PR Analyzing
+Repo for GitHub Bot PR Analyzing Research
