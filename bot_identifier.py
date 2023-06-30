@@ -295,7 +295,15 @@ class bot_identifier():
 
 if __name__ == "__main__":
     # nltk.download("wordnet")
-    df = pd.read_csv("./data/results/collected_data_one_year_microsoft_May1st.csv")
+    
+    # Input File
+    df = pd.read_csv("./data/results/collected_data_one_year_microsoft_May1st.csv") # here is the raw dataset file path
+    
+    # Init the object
     bot_identification = bot_identifier()
-    bot_identification.setOuput("./data/results/bot_identification_MS200.csv")
-    bot_identification.run(df, step=3) # if you want to put the developer acount in the final result, then set the step to 4
+    
+    # Output File
+    bot_identification.setOuput("./data/results/bot_identification_MS200.csv") # modify the output path as you wish
+    
+    # Run the Script
+    bot_identification.run(df, step=3) # if you want to put the developer account in the final result, then set the step to 4
