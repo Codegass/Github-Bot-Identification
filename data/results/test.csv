@@ -1,0 +1,131 @@
+A_or_C,repo_name,pull_number,pull_title,comment_body,activity_body,user,event_time,link,Bot
+C,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",Thanks @orta! Completely forgot about this patch,0,"NamedUser(login=""mjbvz"")",2021-02-12 18:54:15,https://github.com/microsoft/vscode/pull/116571#issuecomment-778384371,0
+C,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",Welcome!,0,"NamedUser(login=""orta"")",2021-02-12 19:11:07,https://github.com/microsoft/vscode/pull/116571#issuecomment-778392605,0
+A,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",0,assigned,mjbvz,2021-02-12 18:26:18,https://api.github.com/repos/microsoft/vscode/issues/events/4326102705,0
+A,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",0,referenced,mjbvz,2021-02-12 18:54:12,https://api.github.com/repos/microsoft/vscode/issues/events/4326213449,0
+A,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",0,merged,mjbvz,2021-02-12 18:54:12,https://api.github.com/repos/microsoft/vscode/issues/events/4326213454,0
+A,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",0,closed,mjbvz,2021-02-12 18:54:13,https://api.github.com/repos/microsoft/vscode/issues/events/4326213473,0
+A,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",0,head_ref_deleted,mjbvz,2021-02-12 18:54:13,https://api.github.com/repos/microsoft/vscode/issues/events/4326213546,0
+A,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",0,mentioned,orta,2021-02-12 18:54:16,https://api.github.com/repos/microsoft/vscode/issues/events/4326213725,0
+A,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",0,subscribed,orta,2021-02-12 18:54:16,https://api.github.com/repos/microsoft/vscode/issues/events/4326213731,0
+A,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",0,milestoned,mjbvz,2021-02-12 18:54:21,https://api.github.com/repos/microsoft/vscode/issues/events/4326214182,0
+A,microsoft/vscode,116571,"Revert ""Support the new 4.0 definition of isArray""",0,locked,github-actions[bot],2021-03-29 23:44:51,https://api.github.com/repos/microsoft/vscode/issues/events/4524387596,2
+C,microsoft/powertoys,14083,[Settings] Fix localization resource include path,- [x] Linked issue: #14063,0,"NamedUser(login=""franky920920"")",2021-10-29 14:33:40,https://github.com/microsoft/PowerToys/pull/14083#issuecomment-954794446,0
+C,microsoft/powertoys,14083,[Settings] Fix localization resource include path,@yuyoyuppe Any ideas how this happened? Doesn't seem like someone would manually touch a .csproj file?,0,"NamedUser(login=""niels9001"")",2021-10-29 15:11:15,https://github.com/microsoft/PowerToys/pull/14083#issuecomment-954822343,0
+C,microsoft/powertoys,14083,[Settings] Fix localization resource include path,"probably because we generate resources files for other languages on CI, so VS automatically inferred that we only have en?",0,"NamedUser(login=""yuyoyuppe"")",2021-10-29 15:40:06,https://github.com/microsoft/PowerToys/pull/14083#issuecomment-954842623,0
+C,microsoft/powertoys,14083,[Settings] Fix localization resource include path,"> Any ideas how this happened? Doesn't seem like someone would manually touch a .csproj file?
+
+Tracked it to this specific commit: https://github.com/microsoft/PowerToys/pull/13866/commits/4bc20c358cf8127974f857773dad150beb7388fc#diff-4a4621b6eaf935e501a79f869e6ce60a8b450fe366137386d8d9896e8c9d8676
+@niels9001 It has your name above it. Don't know how. I do know you use English on your computer. So, it would make sense that you didn't see the difference.",0,"NamedUser(login=""Jay-o-Way"")",2021-12-07 20:23:33,https://github.com/microsoft/PowerToys/pull/14083#issuecomment-988239146,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,review_requested,yuyoyuppe,2021-10-29 14:31:49,https://api.github.com/repos/microsoft/PowerToys/issues/events/5541006060,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,mentioned,yuyoyuppe,2021-10-29 15:11:15,https://api.github.com/repos/microsoft/PowerToys/issues/events/5541246584,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,subscribed,yuyoyuppe,2021-10-29 15:11:15,https://api.github.com/repos/microsoft/PowerToys/issues/events/5541246599,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,referenced,yuyoyuppe,2021-10-29 17:06:57,https://api.github.com/repos/microsoft/PowerToys/issues/events/5541843659,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,merged,yuyoyuppe,2021-10-29 17:06:57,https://api.github.com/repos/microsoft/PowerToys/issues/events/5541843669,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,closed,yuyoyuppe,2021-10-29 17:06:57,https://api.github.com/repos/microsoft/PowerToys/issues/events/5541843683,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,head_ref_deleted,yuyoyuppe,2021-10-29 17:07:02,https://api.github.com/repos/microsoft/PowerToys/issues/events/5541844184,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,labeled,Jay-o-Way,2021-12-07 20:11:18,https://api.github.com/repos/microsoft/PowerToys/issues/events/5729789392,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,labeled,Jay-o-Way,2021-12-07 20:11:18,https://api.github.com/repos/microsoft/PowerToys/issues/events/5729789394,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,mentioned,niels9001,2021-12-07 20:23:33,https://api.github.com/repos/microsoft/PowerToys/issues/events/5729839358,0
+A,microsoft/powertoys,14083,[Settings] Fix localization resource include path,0,subscribed,niels9001,2021-12-07 20:23:33,https://api.github.com/repos/microsoft/PowerToys/issues/events/5729839365,0
+C,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,@typescript-bot cherry-pick this to release-4.3,0,"NamedUser(login=""DanielRosenwasser"")",2021-06-01 17:32:28,https://github.com/microsoft/TypeScript/pull/44311#issuecomment-852315314,0
+C,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,"Heya @DanielRosenwasser, I've started to run the task to cherry-pick this into `release-4.3` on this PR at e60738876ac17da52381f2dada60be2ce955c6c7. You can monitor the build [here](https://typescript.visualstudio.com/cf7ac146-d525-443c-b23c-0d58337efebc/_build/results?buildId=104403).",0,"NamedUser(login=""typescript-bot"")",2021-06-01 17:32:32,https://github.com/microsoft/TypeScript/pull/44311#issuecomment-852315436,1
+C,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,"Hey @DanielRosenwasser, I couldn't open a PR with the cherry-pick. ([You can check the log here](https://typescript.visualstudio.com/TypeScript/_build/index?buildId=104403&_a=summary)). You may need to squash and pick this PR into release-4.3 manually.",0,"NamedUser(login=""typescript-bot"")",2021-06-01 17:36:44,https://github.com/microsoft/TypeScript/pull/44311#issuecomment-852318609,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,assigned,ahejlsberg,2021-05-27 23:24:04,https://api.github.com/repos/microsoft/TypeScript/issues/events/4808804493,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,labeled,typescript-bot,2021-05-27 23:24:04,https://api.github.com/repos/microsoft/TypeScript/issues/events/4808804535,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,labeled,typescript-bot,2021-05-27 23:24:14,https://api.github.com/repos/microsoft/TypeScript/issues/events/4808805046,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,review_requested,ahejlsberg,2021-05-27 23:24:37,https://api.github.com/repos/microsoft/TypeScript/issues/events/4808806309,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,review_requested,ahejlsberg,2021-05-27 23:24:37,https://api.github.com/repos/microsoft/TypeScript/issues/events/4808806313,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,review_requested,ahejlsberg,2021-05-27 23:24:38,https://api.github.com/repos/microsoft/TypeScript/issues/events/4808806317,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,referenced,ahejlsberg,2021-05-28 00:23:30,https://api.github.com/repos/microsoft/TypeScript/issues/events/4808981832,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,merged,ahejlsberg,2021-05-28 00:23:30,https://api.github.com/repos/microsoft/TypeScript/issues/events/4808981835,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,closed,ahejlsberg,2021-05-28 00:23:30,https://api.github.com/repos/microsoft/TypeScript/issues/events/4808981857,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,head_ref_deleted,ahejlsberg,2021-05-28 00:23:34,https://api.github.com/repos/microsoft/TypeScript/issues/events/4808982020,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,mentioned,typescript-bot,2021-06-01 17:32:28,https://api.github.com/repos/microsoft/TypeScript/issues/events/4826843985,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,subscribed,typescript-bot,2021-06-01 17:32:28,https://api.github.com/repos/microsoft/TypeScript/issues/events/4826843988,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,mentioned,DanielRosenwasser,2021-06-01 17:32:32,https://api.github.com/repos/microsoft/TypeScript/issues/events/4826844300,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,subscribed,DanielRosenwasser,2021-06-01 17:32:32,https://api.github.com/repos/microsoft/TypeScript/issues/events/4826844304,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,mentioned,DanielRosenwasser,2021-06-01 17:36:44,https://api.github.com/repos/microsoft/TypeScript/issues/events/4826868618,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,subscribed,DanielRosenwasser,2021-06-01 17:36:45,https://api.github.com/repos/microsoft/TypeScript/issues/events/4826868622,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,referenced,DanielRosenwasser,2021-06-01 18:16:28,https://api.github.com/repos/microsoft/TypeScript/issues/events/4827106461,1
+A,microsoft/typescript,44311,Fix unintended 'as const' name lookup error,0,referenced,DanielRosenwasser,2021-06-01 21:55:23,https://api.github.com/repos/microsoft/TypeScript/issues/events/4828037982,1
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,"@PankajBhojwani - will the command palette be still updated if I have it open in the tab-switch mode and create a new tab? I guess the answer is yes, but just checking.",0,"NamedUser(login=""Don-Vito"")",2020-10-21 17:13:05,https://github.com/microsoft/terminal/pull/7993#issuecomment-713725847,0
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,"> 
+> 
+> @PankajBhojwani - will the command palette be still updated if I have it open in the tab-switch mode and create a new tab? I guess the answer is yes, but just checking.
+
+@Don-Vito Yep, this function call was actually entirely a vestigial remnant from an earlier prototype. The tab switcher mode for the command palette uses a totally different mechanism for populating the list of tabs.",0,"NamedUser(login=""zadjii-msft"")",2020-10-21 17:18:29,https://github.com/microsoft/terminal/pull/7993#issuecomment-713728983,0
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,"I'd suggest that you remove the `Closes` verbiage in the PR body, as it doesn't fully address the issue and we don't want it closed.
+
+We need to figure our how to improve startup time.",0,"NamedUser(login=""DHowett"")",2020-10-21 19:01:44,https://github.com/microsoft/terminal/pull/7993#issuecomment-713807047,0
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,"<!--[AutoMerge]-->
+Hello @zadjii-msft!
+
+Because this pull request has the `AutoMerge` label, I will be glad to assist with helping to merge this pull request once all check-in policies pass.
+
+Do note that I've been instructed to only help merge pull requests of this repository that have been opened for at least **8 hours**, a condition that will be fulfilled in about 5 hours 22 minutes. No worries though, I will be back when the time is right! :wink:
+
+##### p.s. you can customize the way I help with merging this pull request, such as holding this pull request until a specific person approves. Simply @mention me (`@msftbot`) and give me an instruction to get started! Learn more [here](https://github.com/microsoft/fluentui/wiki/Advanced-auto-merge).",0,"NamedUser(login=""msftbot[bot]"")",2020-10-21 19:23:08,https://github.com/microsoft/terminal/pull/7993#issuecomment-713821830,1
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,@msftbot merge this in 4 minutes,0,"NamedUser(login=""DHowett"")",2020-10-21 19:33:14,https://github.com/microsoft/terminal/pull/7993#issuecomment-713826949,0
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,"Hello @DHowett!
+
+Because you've given me some instructions on how to help merge this pull request, I'll be modifying my merge approach. Here's how I understand your requirements for merging this pull request:
+* I won't merge this pull request until after the UTC date **Wed, 21 Oct 2020 19:37:17 GMT**, which is in 4 minutes
+
+If this doesn't seem right to you, you can tell me to cancel these instructions and use the auto-merge policy that has been configured for this repository. Try telling me ""forget everything I just told you"".",0,"NamedUser(login=""msftbot[bot]"")",2020-10-21 19:33:17,https://github.com/microsoft/terminal/pull/7993#issuecomment-713826971,1
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,"@zadjii-msft , @PankajBhojwani  - this did regressed. Once if you had the command palette open on the tab switcher and you were added the new tab it was added to the list of the commands immediately. Now it will will be updated only on the next opening of the tab switcher.",0,"NamedUser(login=""Don-Vito"")",2020-10-22 16:42:18,https://github.com/microsoft/terminal/pull/7993#issuecomment-714619171,0
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,@Don-Vito that could have also been due to #7952 ,0,"NamedUser(login=""DHowett"")",2020-10-22 16:43:53,https://github.com/microsoft/terminal/pull/7993#issuecomment-714620040,0
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,@DHowett - it is certainly is. I already verified it (while merging main to https://github.com/microsoft/terminal/pull/7977). Sorry @PankajBhojwani :smile:,0,"NamedUser(login=""Don-Vito"")",2020-10-22 16:51:05,https://github.com/microsoft/terminal/pull/7993#issuecomment-714624321,0
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,"So, generally we consider the switcher to be “ephemeral”; it shouldn’t be onscreen while tabs are changing, but it shouldn’t be dangerous if it is. So long as it doesn’t crash, i’m okay with an n-1 state snapshot being on display. ",0,"NamedUser(login=""DHowett"")",2020-10-22 16:53:05,https://github.com/microsoft/terminal/pull/7993#issuecomment-714625505,0
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,"> 
+> 
+> So, generally we consider the switcher to be “ephemeral”; it shouldn’t be onscreen while tabs are changing, but it shouldn’t be dangerous if it is. So long as it doesn’t crash, i’m okay with an n-1 state snapshot being on display.
+
+@DHowett - in ""command palette highlighting"" I worked really hard to change the highlighted text if the command name is changed in the background (e.g. when new tab is open). Can I remove it?",0,"NamedUser(login=""Don-Vito"")",2020-10-22 17:18:16,https://github.com/microsoft/terminal/pull/7993#issuecomment-714639480,0
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,":tada:`Windows Terminal v1.4.3141.0` has been released which incorporates this pull request.:tada:
+
+Handy links:
+* [Release Notes](https://github.com/microsoft/terminal/releases/tag/v1.4.3141.0)
+* [Store Download](https://www.microsoft.com/store/apps/9n8g5rfz9xk3?cid=storebadge&ocid=badge)
+",0,"NamedUser(login=""msftbot[bot]"")",2020-11-11 18:04:29,https://github.com/microsoft/terminal/pull/7993#issuecomment-725575338,1
+C,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,":tada:`Windows Terminal Preview v1.5.3142.0` has been released which incorporates this pull request.:tada:
+
+Handy links:
+* [Release Notes](https://github.com/microsoft/terminal/releases/tag/v1.5.3142.0)
+* [Store Download](https://www.microsoft.com/store/apps/9n8g5rfz9xk3?cid=storebadge&ocid=badge)
+",0,"NamedUser(login=""msftbot[bot]"")",2020-11-11 18:08:17,https://github.com/microsoft/terminal/pull/7993#issuecomment-725577254,1
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,labeled,msftbot[bot],2020-10-21 16:45:12,https://api.github.com/repos/microsoft/terminal/issues/events/3904917800,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,labeled,msftbot[bot],2020-10-21 16:45:12,https://api.github.com/repos/microsoft/terminal/issues/events/3904917805,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,labeled,msftbot[bot],2020-10-21 16:45:12,https://api.github.com/repos/microsoft/terminal/issues/events/3904917808,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,labeled,msftbot[bot],2020-10-21 16:45:12,https://api.github.com/repos/microsoft/terminal/issues/events/3904917811,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,PankajBhojwani,2020-10-21 17:13:06,https://api.github.com/repos/microsoft/terminal/issues/events/3905034883,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,PankajBhojwani,2020-10-21 17:13:06,https://api.github.com/repos/microsoft/terminal/issues/events/3905034886,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,Don-Vito,2020-10-21 17:18:29,https://api.github.com/repos/microsoft/terminal/issues/events/3905056228,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,Don-Vito,2020-10-21 17:18:29,https://api.github.com/repos/microsoft/terminal/issues/events/3905056235,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,PankajBhojwani,2020-10-21 17:18:29,https://api.github.com/repos/microsoft/terminal/issues/events/3905056241,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,PankajBhojwani,2020-10-21 17:18:29,https://api.github.com/repos/microsoft/terminal/issues/events/3905056243,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,labeled,zadjii-msft,2020-10-21 19:23:04,https://api.github.com/repos/microsoft/terminal/issues/events/3905588988,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,zadjii-msft,2020-10-21 19:23:08,https://api.github.com/repos/microsoft/terminal/issues/events/3905589263,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,zadjii-msft,2020-10-21 19:23:08,https://api.github.com/repos/microsoft/terminal/issues/events/3905589266,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,DHowett,2020-10-21 19:33:18,https://api.github.com/repos/microsoft/terminal/issues/events/3905626744,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,DHowett,2020-10-21 19:33:18,https://api.github.com/repos/microsoft/terminal/issues/events/3905626747,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,referenced,msftbot[bot],2020-10-21 19:37:58,https://api.github.com/repos/microsoft/terminal/issues/events/3905643982,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,merged,msftbot[bot],2020-10-21 19:37:58,https://api.github.com/repos/microsoft/terminal/issues/events/3905643986,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,closed,msftbot[bot],2020-10-21 19:37:59,https://api.github.com/repos/microsoft/terminal/issues/events/3905643998,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,head_ref_deleted,msftbot[bot],2020-10-21 19:38:02,https://api.github.com/repos/microsoft/terminal/issues/events/3905644264,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,zadjii-msft,2020-10-22 16:42:18,https://api.github.com/repos/microsoft/terminal/issues/events/3910095187,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,zadjii-msft,2020-10-22 16:42:18,https://api.github.com/repos/microsoft/terminal/issues/events/3910095190,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,PankajBhojwani,2020-10-22 16:42:19,https://api.github.com/repos/microsoft/terminal/issues/events/3910095197,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,PankajBhojwani,2020-10-22 16:42:19,https://api.github.com/repos/microsoft/terminal/issues/events/3910095200,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,Don-Vito,2020-10-22 16:43:53,https://api.github.com/repos/microsoft/terminal/issues/events/3910101829,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,Don-Vito,2020-10-22 16:43:54,https://api.github.com/repos/microsoft/terminal/issues/events/3910101834,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,DHowett,2020-10-22 16:51:06,https://api.github.com/repos/microsoft/terminal/issues/events/3910133198,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,DHowett,2020-10-22 16:51:06,https://api.github.com/repos/microsoft/terminal/issues/events/3910133203,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,PankajBhojwani,2020-10-22 16:51:06,https://api.github.com/repos/microsoft/terminal/issues/events/3910133208,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,PankajBhojwani,2020-10-22 16:51:06,https://api.github.com/repos/microsoft/terminal/issues/events/3910133210,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,mentioned,DHowett,2020-10-22 17:18:17,https://api.github.com/repos/microsoft/terminal/issues/events/3910254837,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,subscribed,DHowett,2020-10-22 17:18:17,https://api.github.com/repos/microsoft/terminal/issues/events/3910254844,2
+A,microsoft/terminal,7993,Fix slowdown on open/close tabs when the user has many profiles,0,referenced,DHowett,2020-10-27 01:43:46,https://api.github.com/repos/microsoft/terminal/issues/events/3923527350,2
+A,microsoft/playwright,10779,fix: support regexp flags with locator.withText(),0,referenced,mxschmitt,2021-12-08 03:33:04,https://api.github.com/repos/microsoft/playwright/issues/events/5731267083,0
+A,microsoft/playwright,10779,fix: support regexp flags with locator.withText(),0,merged,mxschmitt,2021-12-08 03:33:04,https://api.github.com/repos/microsoft/playwright/issues/events/5731267088,0
+A,microsoft/playwright,10779,fix: support regexp flags with locator.withText(),0,closed,mxschmitt,2021-12-08 03:33:05,https://api.github.com/repos/microsoft/playwright/issues/events/5731267108,0
