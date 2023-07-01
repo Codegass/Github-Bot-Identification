@@ -284,6 +284,9 @@ class bot_identifier():
             raise ValueError("The output path must be a csv file")
         self.outputpath = outputpath
 
+    def setWindowSize(self, window_size):
+        self.CACHE_SIZE =   window_size
+
     def run(self, df, step=2):
 
         # self.bot_df = pd.DataFrame(columns=["user_name", "repo_name", "pr_link", "bot_level"])
@@ -302,6 +305,9 @@ if __name__ == "__main__":
     # Init the object
     bot_identification = bot_identifier()
     
+    # Set window size
+    bot_identification.setWindowSize(10) # adjust it based on your evaluation results
+
     # Output File
     bot_identification.setOuput("./data/results/bot_identification_MS200.csv") # modify the output path as you wish
     
