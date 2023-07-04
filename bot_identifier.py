@@ -291,7 +291,7 @@ class bot_identifier():
 
         # self.bot_df = pd.DataFrame(columns=["user_name", "repo_name", "pr_link", "bot_level"])
         for index, row in track(df.iterrows(), description="Bot identification...", total=df.shape[0]):
-
+          
             if type(row["comment_body"]) is float:
                  raise Exception('For Index {}, User {} in Repo: {}, PullNumber: {}, the comment body is:\n {}'
                                  .format(index, row["user"], row["repo_name"], row["pull_number"], type(row["comment_body"])))
@@ -313,7 +313,7 @@ if __name__ == "__main__":
     
     # Init the object
     bot_identification = bot_identifier()
-    
+
     # Set window size
     bot_identification.setWindowSize(10) # adjust it based on your evaluation results
 
@@ -321,4 +321,7 @@ if __name__ == "__main__":
     bot_identification.setOuput("./data/results/bot_identification_MS200.csv") # modify the output path as you wish
     
     # Run the Script
-    bot_identification.run(df, step=3) # if you want to put the developer account in the final result, then set the step to 4
+    try:
+        bot_identification.run(df, step=3) # if you want to put the developer account in the final result, then set the step to 4
+    except Exception as ex:
+        print(ex)
