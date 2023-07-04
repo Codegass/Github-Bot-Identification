@@ -1,6 +1,7 @@
-from numpy import int32
+import numpy as np
 import pandas as pd
-import logging, re, time
+from rich.progress import track
+import logging, re, time, csv, os, sys
 
 def load_repo_list(filename, org="apache"):
     '''
@@ -56,7 +57,53 @@ def logger_setup(logger_name, log_file_name, TEST):
 def d3_chord_diagram(df):
     pass
 
+def data_correction(raw_df):
+    ''' 
+    The raw data set collected from the github API has some kind of issues.
+    It will sometimes has an illegal character in the string, which will cause the
+    break of the csv file. This function is to check if there is any illegal character in the string
+    and try to fix it.
+    
+    Input: Raw Data df
+    Output: Fixed Data df
+    '''
+    import warnings
+    warnings.filterwarnings('ignore')
+
+    fixed_df = pd.DataFrame(columns=raw_df.columns)
+    buffer_row = None
+    # iterate through the df
+    for index, row in track(raw_df.iterrows(), description="Bot identification...", total=raw_df.shape[0]):
+
+        if buffer_row is not None:
+            # check if the row has the right number of columns
+            
+            if np.isnan(buffer_row['Bot']):
+                data = [buffer_row.dropna().tolist(), row.dropna().tolist()]
+                print(buffer_row)
+                # Concatenate the rows
+                concatenated_data = [x for sublist in data for x in sublist]
+                # if not, then attach the row to the buffer row
+                buffer_row = pd.DataFrame([concatenated_data], columns=raw_df.columns)
+                # set column type
+                buffer_row['Bot'] = buffer_row['Bot'].astype(float)
+                # merge the new row
+                fixed_df = pd.concat([fixed_df, buffer_row], ignore_index=True)
+                buffer_row = None
+            else:
+                # if the row has the right number of columns, then append the buffer row
+                fixed_df = fixed_df.append(buffer_row)
+                buffer_row = row
+        else:
+            buffer_row = row
+    
+    # append the last buffer row
+    if buffer_row is not None:
+        fixed_df = fixed_df.append(buffer_row)
+
+    return fixed_df
+
 if __name__ == "__main__":
     ## test the function ##
-    repo_list = load_repo_list("data/repo_list_apache.csv")
-    print(repo_list)
+    df = pd.read_csv("data/results/collected_data_one_year_microsoft_May1st-3.csv",low_memory=False)
+    data_correction(df).to_csv("data/results/collected_data_one_year_microsoft_May1st-3_fixed.csv", index=False)
