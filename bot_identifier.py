@@ -308,8 +308,7 @@ if __name__ == "__main__":
     # nltk.download("wordnet")
     
     # Input File
-    # df = pd.read_csv("./data/results/collected_data_one_year_microsoft_May1st.csv") # here is the raw dataset file path
-    df = pd.read_csv("/Users/rehmanh/Desktop/Research/Chenhao Bot Study/collected_data_one_year_microsoft_May1st-3.csv") # here is the raw dataset file path
+    df = pd.read_csv("./data/results/collected_data_one_year_microsoft_May1st.csv") # here is the raw dataset file path
     
     # Init the object
     bot_identification = bot_identifier()
@@ -318,8 +317,7 @@ if __name__ == "__main__":
     bot_identification.setWindowSize(10) # adjust it based on your evaluation results
 
     # Output File
-    # bot_identification.setOuput("./data/results/bot_identification_MS200.csv") # modify the output path as you wish
-    bot_identification.setOuput("/Users/rehmanh/Desktop/Research/Chenhao Bot Study/data/results/bot_identification_MS200_Habib.csv") # modify the output path as you wish
+    bot_identification.setOuput("./data/results/bot_identification_MS200.csv") # modify the output path as you wish
     
     # Run the Script
     try:
