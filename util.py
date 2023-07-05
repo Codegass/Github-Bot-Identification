@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from rich.progress import track
 import logging, re, time, csv, os, sys
+import argparse
 
 def load_repo_list(filename, org="apache"):
     '''
@@ -103,7 +104,20 @@ def data_correction(raw_df):
 
     return fixed_df
 
+def main(file_path):
+    df = pd.read_csv(file_path, low_memory=False)
+    corrected_df = data_correction(df)
+    corrected_df.to_csv(file_path[:-4]+"_fixed.csv", index=False)
+
 if __name__ == "__main__":
     ## test the function ##
-    df = pd.read_csv("data/results/collected_data_one_year_microsoft_May1st-3.csv",low_memory=False)
-    data_correction(df).to_csv("data/results/collected_data_one_year_microsoft_May1st-3_fixed.csv", index=False)
+    
+    # NeedFixFilePath = "data/results/collected_data_one_year_microsoft_May1st-3.csv"
+    # df = pd.read_csv(NeedFixFilePath,low_memory=False)
+    # data_correction(df).to_csv(NeedFixFilePath[:-4]+"_fixed.csv", index=False)
+
+    parser = argparse.ArgumentParser(description="Process and correct data in a given csv file.")
+    parser.add_argument("file_path", help="The path to the file to be corrected.")
+    args = parser.parse_args()
+
+    main(args.file_path)
