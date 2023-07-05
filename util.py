@@ -93,14 +93,14 @@ def data_correction(raw_df):
                 buffer_row = None
             else:
                 # if the row has the right number of columns, then append the buffer row
-                fixed_df = fixed_df.append(buffer_row)
+                fixed_df = fixed_df._append(buffer_row)
                 buffer_row = row
         else:
             buffer_row = row
     
     # append the last buffer row
     if buffer_row is not None:
-        fixed_df = fixed_df.append(buffer_row)
+        fixed_df = fixed_df._append(buffer_row)
 
     return fixed_df
 
