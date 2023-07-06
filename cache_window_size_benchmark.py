@@ -345,7 +345,7 @@ class bot_identifier():
         print("The recall is: ", self.recall_score(ground_truth, classificaiotn_result))
         print("The f1-score is: ", self.f1_score(ground_truth, classificaiotn_result))
         
-        # self.bot_df.to_csv(self.outputpath, index=False)
+        self.bot_df.to_csv(self.outputpath, index=False)
     
 
 if __name__ == "__main__":
@@ -361,6 +361,7 @@ if __name__ == "__main__":
         
         # Set Window Size
         bot_identification.set_cache_size(window_size)
+        bot_identification.setOuput("./data/identified.csv") # here is the output file path
         print("The window size is: ", window_size)
 
         # Run the Script
