@@ -58,6 +58,9 @@ confirmed_bots = [
     "csigs"
 ]
 
+""" K-V pairs of repo_name - GH Repostory Object """
+memo = {  }
+
 if __name__ == '__main__':
     # get all the raw data into a DataFrame
     df = pd.read_csv('/Users/rehmanh/Desktop/Research/Chenhao Bot Study/collected_data_one_year_microsoft_May1st-3_fixed.csv', index_col=False)
@@ -78,6 +81,9 @@ if __name__ == '__main__':
     timezone = pytz.timezone("Etc/Greenwich")
 
     for index, row in prs.iterrows():
+        if index == 50:
+            break
+
         if gh.rate_limiting[0] < 5:
             print("SLEEPING TO AVOID RATE LIMIT")
             time.sleep(3600)
@@ -124,7 +130,12 @@ if __name__ == '__main__':
 
         try:
             # interface with Github and collect the relevant metrics
-            repo = gh.get_repo(repo_name)
+            if repo_name not in memo:
+                repo = gh.get_repo(repo_name)
+                memo[repo_name] = repo
+            else:
+                repo = memo[repo_name]
+
             pr = repo.get_pull(pull_number)
             created_at = timezone.localize(pr.created_at)
             turnaround_time = initial_activity_at - created_at
@@ -148,4 +159,4 @@ if __name__ == '__main__':
             print('There was an error at index {} for repo {} and pull number'.format(index, repo_name, pull_number))
             print(ex)
 
-    result.to_csv('/Users/rehmanh/Desktop/Research/Chenhao Bot Study/RQ4.csv', index=False)   
+    result.to_csv('/Users/rehmanh/Desktop/Research/Chenhao Bot Study/TEST_RQ4.csv', index=False)   
